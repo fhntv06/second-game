@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    background-color: #81B5CA;
+    overflow-x: hidden;
+}
+
+main{
+    position: relative;
+    background-image: url(/file/img/sky.jpg);
+    width: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: top left;
+}
+
+.ground{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%;
+    background: url(/file/img/road.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: 0%;
+}
+
+.car{
+    position: relative;
+    top: -35px;
+    left: 0;
+    width: 100px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: rotateY(180deg);
+}
+
+.garage {
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 330px;
+    width: 370px;
+    background-image: url(/file/img/garage.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
+
+.modal__page{
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
+
+.modal__task, .modal__rules, .modal__car-data, .modal__arrow{
+    margin-bottom: 8px;
+    width: 250px;
+    height: auto;
+    box-shadow: 0px 5px 10px 5px #1976d2;
+}
+
+.modal__content{
+    background-color: white;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 15px;
+}
+
+h2, h3{
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-family: Arial;
+    text-align: center;
+}
+
+h2{
+    color: black;
+    margin-bottom: 16px;
+    font-size: 1.5rem;
+}
+
+h3{
+    color: #000000b3;
+    font-size: 1rem;
+    margin-bottom: 14px;
+}
+
+.content__list {
+    margin-left: 20px;
+    border-radius: 0 10px;
+}
+
+.content__item {
+    display: flex;
+    margin: 5px 0;
+    padding: 5px 0 5px 5px;
+    list-style-type: none;
+}
+
+.content__item-check{
+    opacity: 0;
+    content: url(/file/img/check_mark.svg);
+    margin-right: 5px;
+    transition: 2s;
+}
+
+.content__item img{
+
+}
+
+.modal__final{
+    z-index: 15;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #673ab7d1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.active{
+    opacity: 1;
+    transition: 2s;
+}
+
+.modal__final__content{
+    width: 260px;
+    height: auto;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 5px 10px 5px #4a148c;
+}
+
+.modal__final__buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn{
+    flex: 1;
+    padding: 5px;
+    margin: 25px 10px 0 10px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 2px 3px 0px #4a148c;
+}
+
+.btn:active{
+    box-shadow:inset 0 4px 6px 0px #4a148c;
+}
+
+.car-oncomingTraffic{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+}
+
+.modal__arrow{
+    margin-top: 16px;
+}
+
+.modal__arrow .modal__content{
+    background-color: transparent;
+    width: 100%;
+    opacity: .75;
+    padding: 0;
+}
+
+.modal__arrow .content__list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0px;
+}
+
+.modal__arrow .content__list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    cursor: pointer;
+}

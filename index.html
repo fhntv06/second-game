@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver</title>
+
+    <link type="image/x-icon" rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <main class="main">
+        <div class="ground">
+            <div class="car"></div> 
+            <!-- <div class="garage"></div> -->
+            <!-- <div class="car-oncomingTraffic"></div> -->
+        </div>
+
+        <div class="modal__page">
+            <div class="modal__task">
+                <div class="modal__content">
+                    <h2 class="content__heading">Task:</h2>
+                    <ul class="content__list">
+                        <li class="content__item">
+                            <div class="content__item-check"></div> 
+                            <p>Drive 1500 meters</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal__rules">
+                <div class="modal__content">
+                    <h2 class="content__heading">Rules:</h2>
+                    <h3>Drive:</h3>
+                    <ul class="content__list">
+                        <li class="content__item">key&nbsp;<b>D</b>&nbsp;-&nbsp;<i>right</i></li>
+                        <li class="content__item">key&nbsp;<b>A</b>&nbsp;-&nbsp;<i>left</i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal__car-data">
+                <div class="modal__content">
+                    <h2 class="content__heading">Car data:</h2>
+                    <ul class="content__list">
+                        <li class="content__item">Speed:&nbsp;<span class="speed-car">0</span>&nbsp;km/h</li>
+                        <li class="content__item">Way:&nbsp;<span class="task-1-meters">0</span>&nbsp;meters</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="modal__arrow">
+                <div class="modal__content">
+                    <ul class="content__list">
+                        <li class="content__item item__move-left"><img class="" src="/file/img/arrow_left.png" alt="Move left"></li>
+                        <li class="content__item item__move-right"><img class="" src="/file/img/arrow_right.png" alt="Move right"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal__final">
+            <div class="modal__final__content">
+                <h2 class="content__heading">Task completed!</h2>
+                <div class="modal__final__buttons">
+                    <button class="btn btn-close">Close</button>
+                    <button class="btn btn-next">Next</button>        
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/main.js"></script>
+</body>
+</html>
