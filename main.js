@@ -58,7 +58,7 @@ const itemMoveLeft = document.querySelector(".item__move-left");
 const itemMoveRight = document.querySelector(".item__move-right");
 
 document.addEventListener("DOMContentLoaded", () => {
-    car.style.background = "url(/file/img/car.png)";
+    car.style.background = "url(/second-game/file/img/car.png)";
     
     main.style.height = `${window.outerHeight }px`;
 
