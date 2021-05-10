@@ -133,7 +133,7 @@ function checkSpeedCar(){
 function moveRight(event) {
 
     carRight = car.offsetLeft + car.offsetWidth;
-console.log(event);
+
     if( event.code == 'KeyD' || event.type == "mouseover"){
 
         car.style.transform = "rotateY(180deg)";
