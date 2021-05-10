@@ -229,7 +229,7 @@ function moveLeft(event) {
 // остановка
 function stop(event){
     if( event.code == 'KeyD' || event.code == 'KeyA' ){
-        car.style.backgroundImage = "url(/file/img/car.png)";
+        car.style.backgroundImage = "url(/second-game/file/img/car.png)";
         taskSpeedCar.innerHTML = 0;
 
         car.style.left = `${carPosition}px`;
