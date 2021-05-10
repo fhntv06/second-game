@@ -138,7 +138,7 @@ console.log(event);
 
         car.style.transform = "rotateY(180deg)";
 
-        car.style.backgroundImage = "url(/file/gif/auto.gif)";
+        car.style.backgroundImage = "url(/second-game/file/gif/auto.gif)";
 
         car.style.left = `${carPosition}px`;
         
@@ -154,7 +154,7 @@ console.log(event);
         // движение земли при прохождении 75% вправо 
         if( carRight >= main.offsetWidth * 0.75 ){
 
-            car.style.backgroundImage = "url(/file/gif/auto.gif)";
+            car.style.backgroundImage = "url(/second-game/file/gif/auto.gif)";
             speedCar = 0;
 
             ground.style.backgroundPosition = `${positionGrnd}px`;
@@ -187,7 +187,7 @@ function moveLeft(event) {
 
 
         car.style.transform = "rotateY(360deg)";
-        car.style.backgroundImage = "url(/file/gif/auto.gif)";
+        car.style.backgroundImage = "url(/second-game/file/gif/auto.gif)";
 
 
         car.style.left = `${carPosition}px`;
@@ -204,7 +204,7 @@ function moveLeft(event) {
         // движение земли при прохождении 75% вправо 
         if( carRight <= main.offsetWidth * 0.25 ){
 
-            car.style.backgroundImage = "url(/file/gif/auto.gif)";
+            car.style.backgroundImage = "url(/second-game/file/gif/auto.gif)";
             speedCar = 0;
 
             ground.style.backgroundPosition = `${positionGrnd}px`;
@@ -274,7 +274,7 @@ function oncomingTrafficCreate(){
                 carOncomingTrafficArr[i].style.left = main.offsetWidth + carOncomingTraffic.offsetWidth+"px";
 
                 if( !carOncomingTrafficArr[i].style.backgroundImage ){
-                    carOncomingTrafficArr[i].style.backgroundImage = `url(/file/gif/${carSkin[carSkinIndex]}.gif)`; 
+                    carOncomingTrafficArr[i].style.backgroundImage = `url(/second-game/file/gif/${carSkin[carSkinIndex]}.gif)`; 
                 }
         
             }
@@ -318,7 +318,7 @@ function oncomingTrafficMove(){
                 let carSkinIndex = Math.floor(Math.random( ) * ((carSkin.length - 1) - 0)) + 0;
                 speedCarOncoming = Math.floor(Math.random( ) * (2.5 - 0.5) + 0.5);
 
-                carOncomingTrafficArr[i].style.backgroundImage = `url(/file/gif/${carSkin[carSkinIndex]}.gif)`; 
+                carOncomingTrafficArr[i].style.backgroundImage = `url(/second-game/file/gif/${carSkin[carSkinIndex]}.gif)`; 
 
             
                 // удаление и вызов функции создания
